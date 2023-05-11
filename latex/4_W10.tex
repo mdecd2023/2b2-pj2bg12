@@ -12,6 +12,18 @@
 
 幫忙尋找和解析Brython 程式環境，和亂數生成
 \section{隨機抽組別}
+\lstset{
+    language=Python,
+    frame=single,
+    numbers=left,
+    captionpos=b,
+    basicstyle=\ttfamily\small,
+    showstringspaces=false,
+    breaklines=true,
+    tabsize=4,
+    xleftmargin=15pt,
+}
+\begin{lstlisting}
 from browser import html, document
 import random
 bcd_tem = "https://mdecd2023.github.io/2b2-pj2bg"
@@ -31,3 +43,4 @@ for i in grp:
     brython_div <= html.A("repo", href=github)
     brython_div <= ")"
     brython_div <= html.BR()
+\end{lstlisting}

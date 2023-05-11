@@ -16,10 +16,26 @@
 
 
 \newpage
-\qquad 分別在擊球器外側保留約冰球直徑1.5倍之區域作為得分判定區，如圖4.4中的紅色區域。\\
 \section{隨機抽組程式碼}
- CoppeliaSim是具有集成開發環境的機器人模擬器,基於分佈式控制體系架構,可以通過嵌入式腳本，插件，ROS或BlueZero節點，RemoteAPI客戶端或自定義解決方案進行模型控制。\\
- 
+ from browser import html, document\\
+import random\\
+bcd_tem = "https://mdecd2023.github.io/2b2-pj2bg"\\
+bgithub = "https://github.com/mdecd2023/2b2-pj2bg"\\
+brython_div = document["brython_div1"]\\
+#  generate random list from 1 to 16\\
+grp = []\\
+for i in range(1, 17):\\
+    grp.append(i)\\
+random.shuffle(grp)\\
+#for i in range(1, 17):\\
+for i in grp:\\
+    url = bcd_tem + str(i)\\
+    github = bgithub + str(i)\\
+    brython_div <= html.A("pj2bg"+str(i), href=url)\\
+    brython_div <= " ("\\
+    brython_div <= html.A("repo", href=github)\\
+    brython_div <= ")"\\
+    brython_div <= html.BR()\\
  \begin{figure}[hbt!]
 \center
 \includegraphics[width=11cm]{CoppeliaSim}
